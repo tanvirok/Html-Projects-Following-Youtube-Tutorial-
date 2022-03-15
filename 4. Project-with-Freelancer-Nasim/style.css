@@ -1,0 +1,1110 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0; padding: 0;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif; 
+    font-size: 16px;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+
+}
+
+/* ===============  REUSEABLE COMPONENTS ================= */
+
+section {
+    padding: 80px 0px;
+}
+
+
+/* =============== START HEADER SECTION ================== */
+
+.topBarMain{
+    background: #f5f5f5;
+}
+.container {
+    width: 1140px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: auto;
+}
+
+.phone {
+  width: 210px;
+  float: left;
+  padding: 15px 10px;     
+  border-left: 1px solid #ddd;
+}
+.phone i {
+    color: #ff5200;
+}
+.email {
+  width: 746px;
+  float: left;
+  padding: 15px 10px;
+  border-left: 1px solid #ddd;
+}
+.email i {
+    color: #ff5200;
+    padding-right: 5px;
+}
+.social {
+  float: left;
+  width: 141px;
+  transition: .3s;
+    
+}
+.topbarWrapper {
+    overflow: hidden;
+}
+.social a {
+    display: block;
+    float: left;
+    padding: 15px;
+    color: #2b2b2b;
+    border-right: 1px solid #ddd;
+}
+.social a:first-child {
+    border-left: 1px solid #ddd;
+}
+.social i:hover {
+    color: #ff5200;
+}
+
+
+
+
+
+.primaryWrapper {
+  overflow: hidden;
+  width: 100%;
+}
+.logo {
+  width: 150px;
+  float: left;
+  margin-top: 22px;    
+}
+.menu {
+  width: 990px;
+  float: left;
+}
+.menu ul {
+  list-style-type: none;
+}
+.menu ul li {
+  float: left;
+}
+ul.mainMenuItem li a{
+    text-decoration: none;
+    font-family: oswald;
+    text-transform: uppercase;
+    font-size: 16px;
+    display: block;
+    padding: 30px 25px;
+    color: #0e0e0e;
+    font-weight: 600;
+    transition: .5s;
+}
+ul.mainMenuItem {
+    float: right;
+}
+ul.mainMenuItem li a:hover {
+    color: #ff5200;
+}
+
+/* ===============  START SLIDER SECTION ================ */
+
+
+.homeSlider {
+    background: url(img/1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 0px;
+}
+.slidercontent {
+    color: #fff;
+    width: 508px;
+}
+.slidercontent h1 {
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    margin-top: 120px;
+    float: left;
+}
+.slidercontent p {
+    font-weight: 600;
+    line-height: 25px;
+    width: 430px;
+    margin-bottom: 30px;
+}
+.sliderWorkButton {
+  background: #ff5200;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  padding: 13px 30px;
+  font-size: 17px;
+  letter-spacing: 2px;
+  border-radius: 3px;
+  font-family: Oswald;
+  font-weight: 600;
+  margin-bottom: 120px;
+  transition: .5s;
+}
+.sliderWorkButton:hover{
+    background: #0e0e0e;
+    color: #fff;
+    cursor: pointer;
+    
+}
+
+
+/* ================  START PAGES SLIDER SECTION =============== */
+
+.pagesSlider {
+    background: #f6f6f6;
+}
+
+.sboxWrapper {
+  overflow: hidden;
+}
+.singleBox {
+  width: 225px;
+  background: #fff;
+  padding: 15px;
+  float: left;
+  margin-right: 30px;
+  transition: .3s;
+  cursor: pointer;
+}
+.sboxTitle {
+  text-align: center;
+  width: 175px;
+  margin: auto;
+}
+.sboxTitle h2 {
+  font-size: 26px;
+  color: #333;
+  text-transform: uppercase;
+  margin: 30px 0px;
+  line-height: 30px;
+}
+.sboxIcon {
+  text-align: center;
+  font-size: 40px;
+  color: #ff5200;
+  margin: 30px 0px;
+}
+.sboxDesc {
+  text-align: center;
+  margin: 30px 10px;
+  color: #6c757d;
+  line-height: 22px;
+}
+.sboxLink {
+  text-align: center;
+  margin: 30px 0px;
+}
+.sboxLink a {
+    text-decoration: none;
+    color: #ff5200;
+    font-weight: 500;
+}
+.singleBox:hover {
+    background: #ff5200; 
+}
+.singleBox i,a{
+    color: #ff5200;
+}
+.singleBox h2{
+    color: #333;
+}
+.singleBox:hover i.fa-ambulance{
+    color: white;
+}
+.singleBox:hover h2{
+    color: #fff;
+}
+.singleBox:hover a{
+    color: #fff;
+}
+.singleBox:hover i.fa-arrow-right{
+    color: #fff;
+}
+.singleBox a i{
+    margin-left: 10px;
+}
+.singleBox:hover div.sboxDesc{
+    color: #fff;
+}
+
+/* =================== START SERVICES SECTION ================= */
+
+
+.servicesWrapper {
+  overflow: hidden;
+}
+.teamI {
+  width: 550px;
+  float: left;
+}
+.teamI img {
+  width: 100%;
+}
+
+.teamD {
+  width: 520px;
+  float: right;
+}
+.teamDpartOne h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+.teamDpartOne p {
+  color: #6c757d;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+.teamFacilities {
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+.teamFacilities ul {
+  list-style-type: none;
+  width: 260px;
+  float: left;
+}
+.teamFacilities ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  transition: .3s;
+}
+.teamFacilities ul li {
+  line-height: 40px;
+}
+.teamContactButton a {
+  text-decoration: none;
+  padding: 12px 40px;
+  text-transform: uppercase;
+  background: #ff5200;
+  color: white;
+  font-weight: 600;
+  font-family: Oswald;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  transition: .3s;
+}
+
+.fas.fa-greater-than {
+  color: #444;
+  margin-right: 15px;
+  font-size: 12px;
+  transition: .3s;
+}
+.teamFacilities ul li a:hover {
+    color: #ff5200;
+}
+.teamFacilities ul li a:hover .fas.fa-greater-than {
+    color: #ff5200;
+
+}
+.teamContactButton a:hover{
+    background: #333;
+    color: #fff;
+}
+
+/* ================= START WHY CHOSE US SECTION =============== */
+
+.whyChoseUs {
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url('img/why-choose-us1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.whyChoseUsWrapper {
+    overflow: hidden;
+}
+.singleIcons {
+  width: 250px;
+  color: #fff;
+  text-align: center;
+  float: left;
+  margin-right: 35px;
+}
+.singleIcons .sIcon {
+  font-size: 40px;
+}
+.singleIcons h2 {
+  font-size: 55px;
+  font-family: arial black;
+  margin: 0px;
+}
+.singleIcons h4 {
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+/* ================ START MORE FROM US SECTION ================ */
+
+.MoreFromUs {
+    background: #f6f6f6;
+}
+.MoreFromUsHeading {
+  text-align: center;
+  width: 510px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+.MoreFromUsHeading h2 {
+  text-transform: uppercase;
+  font-size: 40px;
+}
+.MoreFromUsHeading p {
+  margin-top: 10px;
+  line-height: 25px;
+  color: #6c757d;
+}
+.MoreFromUsBox {
+  width: 255px;
+  float: left;
+  margin-right: 30px;
+}
+.imagesOfMoreFromUs img {
+  width: 100%;
+}
+.MoreFromUsBox h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-top: 17px;
+}
+.MoreFromUsBox p {
+  color: #6c757d;
+  margin-top: 10px;
+  line-height: 25px;
+}
+.MoreFromUsBoxWrapper {
+    overflow: hidden;
+}
+.MoreFromUsHeading h2::after {
+    content: "";
+    height: 3px;
+    width: 65px;
+    background: #ff5200;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* =================== START PRICE PLAN BOX =================== */
+
+
+
+.PricePlanOther h2 {
+  font-family: arial black;
+  font-size: 45px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+.PricePlanOther h4 {
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.PricePlanOther {
+  width: 350px;
+  overflow: hidden;
+  border: 1px solid #eaeaea;
+  float: left;
+  margin-right: 27px;
+  
+}
+.PricePlanOther ul {
+  margin-left: 30px;
+  list-style-type: none;
+  margin-bottom: 40px;
+}
+.PricePlanOther ul li {
+  color: #6c757d;
+  margin-bottom: 20px;
+}
+.PricePlanOther button {
+  margin-left: 30px;
+  margin-bottom: 30px;
+  background: #ff5200;
+  border: none;
+  padding: 15px 40px;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: Oswald;
+  border-radius: 2px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: .3s;
+}
+.PricePlanOther ul li i {
+  color: #ff5200;
+  margin-right: 10px;
+  font-size: 15px;
+}
+.PricePlanOther h2 span {
+  margin-left: 15px;
+  font-size: 20px;
+}
+.PricePlanOther button:hover{
+    background: #333;
+}
+
+.PricePlanOtherWrapper {
+    overflow: hidden;
+}
+
+/* ================ START CHECK OUT IDEA SECTION ============== */
+
+.ideaLeftImg {
+    background: url(img/s02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.idea {
+  padding: 0;
+  height: 440px;
+}
+.ideaLeftImg {
+  width: 50%;
+  float: left;
+  height: 100%;
+}
+.ideaLeftImg img {
+  width: 100%;
+}
+.ideaRightContent {
+  width: 50%;
+  float: right;
+  background: #222222;
+  color: #fff;
+}
+.rightTitle {
+  padding: 60px 60px;
+}
+.rightTitle h2 {
+  text-transform: uppercase;
+  font-size: 35px;
+  padding-bottom: 10px;
+  font-weight: 500;
+}
+.rightIcon {
+  padding-left: 60px;
+  padding-bottom: 60px;
+}
+.rightIconSingle {
+  width: 50%;
+  overflow: hidden;
+  float: left;
+}
+.rIcon {
+  width: 20%;
+  font-size: 40px;
+  text-align: center;
+  float: left;
+  color: #ff5200;
+}
+.rIconTitle {
+  width: 80%;
+  padding-bottom: 50px;
+}
+.rIconTitle h3 {
+  font-size: 22px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  transition: .3s;
+  cursor: pointer;
+}
+.rIconTitle h3:hover{
+    color: #ff5200;
+}
+
+
+/* =================== START OUR TEAM SECTION ================= */
+
+.teamPerson {
+  overflow: hidden;
+}
+.singlePerson {
+  width: 260px;
+  overflow: hidden;
+  float: left;
+  margin-right: 30px;
+}
+.singlePerson:last-child {
+  margin-right: 0;
+}
+.personImg img {
+  width: 100%;
+  transition: .3s;
+}
+.personInfo {
+  padding: 20px 15px;
+  text-align: center;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+.personInfo h3 {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.personInfo p {
+  font-size: 13px;
+  margin-top: 5px;
+  color: #6c757d;
+}
+.joinTeamButton {
+  margin-top: 70px;
+  display: grid;
+  place-items: center;
+}
+.joinTeamButton button {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  font-family: Oswald;
+  font-size: 17px;
+  border-radius: 2px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: .3s;
+}
+.joinTeamButton button:hover {
+  background: #ff5200;
+  color: #fff;
+}
+.personImg {
+  overflow: hidden;
+  position: relative;
+}
+.socialicons a {
+  width: 20px;
+  height: 20px;
+  display: block;
+  float: left;
+  overflow: hidden;
+  background: red;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  border-radius: 100%;
+  padding: 5px;
+  color: #fff;
+  margin-right: 5px;
+}
+.socialicons {
+  position: absolute;
+  bottom: 50px;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 54%;
+}
+.socialicons a:first-child {
+  background: #3B5998;
+  opacity: 0;
+  transition: .90s;
+}
+.socialicons a:nth-child(2) {
+  background: #1BAAEa;
+  opacity: 0;
+  transition: .70s;
+}
+.socialicons a:nth-child(3) {
+  background: #c63d1d;
+  opacity: 0;
+  transition: .50s;
+}
+.socialicons a:last-child {
+  background: #007bb6;
+  opacity: 0;
+  transition: .30s;
+}
+.socialicons a:hover {
+    background: #fff;
+    color: #333;
+}
+.singlePerson:hover .socialicons a:first-child{
+    transform: translateY(20px);
+    opacity: 1;
+}
+.singlePerson:hover .socialiconsproa:nth-child(2){
+    transform: translateY(20px);
+    opacity: 1;
+}
+.singlePerson:hover .socialicons a:nth-child(3){
+    transform: translateY(20px);
+    opacity: 1;
+}
+.singlePerson:hover .socialicons a:last-child{
+    transform: translateY(20px);
+    opacity: 1;
+}
+.singlePerson:hover .personImg img {
+    transform: scale(1.1);
+}
+.singlePerson:hover {
+    cursor: pointer;
+}
+
+/* ================  START PROJECTS SECTION =============== */
+
+
+.projects {
+  background: #f6f6f6;
+}
+.projectsSample {
+  width: 360px;
+  position: relative;
+  overflow: hidden;
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.projectsSample img {
+  width: 100%;
+}
+.projectsSampleInfo {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 40px 30px;
+  background: linear-gradient(to top, black, transparent 160px);
+  padding-bottom: 0;
+  transition: .3s;
+}
+.projectsSampleMeta a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 800;
+}
+.projectsSampleMeta h3 {
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 10px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.projectsSampleInfo i {
+  margin-left: 10px;
+}
+.infoA {
+  color: #fff;
+  font-weight: 600;
+  display: block;
+  transform: translateX(-145px);
+  text-decoration: none;
+  transition: .3s;
+  transition-delay: .3s;  
+}
+.projectsSample:hover .infoA {
+    transform: translateX(1px);
+}
+.projectsSample:hover .projectsSampleInfo {
+    padding: 40px 30px;
+    background: linear-gradient(to top, black, transparent 200px);
+}
+.projectsSampleWrapper {
+    overflow: hidden;
+}
+.projectsSample:nth-child(3){
+    margin-right: 0;
+}
+.projectsSample:nth-child(4){
+    margin-bottom: 0;
+}
+.projectsSample:nth-child(5){
+    margin-bottom: 0;
+}
+.projectsSample:last-child{
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+/* =============== START LATEST NEWS SECTION ================ */
+
+.LsingleBox {
+  width: 361px;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  overflow: hidden;
+  position: relative;
+  float: left;
+  margin-right: 25px;
+}
+.LsingleBox:last-child{
+    margin-right: 0;
+}
+.LsingleBoxWrapper {
+    overflow: hidden;
+}
+.LsingleBox img {
+  width: 100%;
+  transition: .3s;
+}
+.LBimg {
+    overflow: hidden;
+}
+.newsMeta {
+  padding: 25px;
+}
+.date {
+  color: #6c757d;
+  float: left;
+  width: 43%;
+  font-size: 15px;
+}
+.comments a {
+  font-size: 13px;
+  color: #000;
+  transition: .3s;
+  text-decoration: none;
+  
+}
+.LBtext {
+  margin-top: 20px;
+}
+.LBtext h3 {
+    margin-bottom: 20px;
+}
+.LBtextA1 a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #333;
+  font-size: 21px;
+  transition: .3s;
+}
+.LBtext p {
+  line-height: 22px;
+  color: #6c757d;
+  margin-bottom: 20px;
+}
+.LBtextA2 {
+  text-decoration: navajowhite;
+  font-weight: 500;
+}
+.LsingleBox:hover .LBimg img{
+    transform: scale(1.2);
+}
+.comments a:hover {
+    color: #ff5200;
+}
+.LBtextA1 a:hover {
+    color: #ff5200;
+}
+.LBtextA2 i {
+  margin-left: 10px;
+}
+.date::after {
+  content: ;
+  content: "";
+  position: absolute;
+  background: #ff5200;
+  width: 20px;
+  border-bottom: 3px solid #ff5200;
+  left: 122px;
+  top: 285px;
+}
+
+
+/* ===============  START SUBSCRIBE SECTION ================= */
+
+.subscribe {
+    position: relative;
+    margin-bottom: -160px;
+}
+.submitPart {
+  background: #ff5200;
+  overflow: hidden;
+  padding: 30px 40px;
+  border-radius: 3px;
+}
+.subSubmitPart {
+  width: 350px;
+  float: left;
+}
+.subSubmitPart p {
+    color: #fff;
+    line-height: 25px;
+}
+.submitPart h3 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #fff;
+}
+.SSPicon a {
+  color:  #fff;
+  padding: 8px 10px;
+  background: #ff5200;
+  border-radius: 100%;
+  border: 1px solid #fff;
+  transition: .3s;
+}
+.SSPicon {
+  padding-top: 10px;
+}
+.SSPicon a:first-child {
+  padding: 8px 12px;
+}
+.SSPicon a:nth-child(3) {
+  padding: 8px 11px;
+}
+.SSPicon a:hover {
+  background: #fff;
+  color: #000;
+}
+.inputBoxes input:first-child {
+  width: 270px;
+  border: none;
+  padding: 15px;
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.subsmit {
+  width: 115px;
+  padding: 13px;
+  border: navajowhite;
+  border-radius: 30px;
+  background: #000;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  position: absolute;
+  top: 0;
+  right: 50px;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+.inputBoxes {
+  position: relative;
+}
+/* ================= START FOOTER SECTION ================= */
+
+.footer {
+    background: #1c1b1b;
+    color: #fff;
+    
+    position: ;
+}
+.fBox {
+    width: 250px;
+    float: left;
+    margin-right: 25px;
+}
+.fBoxWrapper {
+  padding-top: 150px;
+  overflow: hidden;
+  padding-bottom: 70px;
+}
+.fBox h3 {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #cfcfcf;
+}
+.fBox p {
+  line-height: 22px;
+  color: #ababab;
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+.fBoxIcons a {
+  font-size: 16px;
+  color: #ababab;
+  margin-right: 10px;
+  transition: .3s;
+}
+.fBoxIcons a:hover {
+  color: #ff5200;
+}
+.fBoxSub1 {
+  width: 35px;
+  color: #ff5200;
+  height: 35px;
+  float: left;
+}
+.fBoxSub2 {
+  margin-bottom: 28px;
+  line-height: 20px;
+  color: #ababab;
+}
+.fBoxSub2N {
+  margin-bottom: 10px;
+  line-height: 20px;
+  width: 190px;
+  color: #ababab;
+}
+.fBoxSub2T {
+  line-height: 20px;
+  color: #ababab;
+  width: 270px;
+}
+.fBoxUlinks {
+  padding: 8px;
+  border-top-width: 1px;
+  border-top-color: #7575759e;
+  border-top-style: dashed;
+  font-size: 15px;
+  color: #ababab;
+}
+.fBoxUlinks:first-child {
+  border-top-style: none;
+}
+.fBoxUlinks i {
+  margin-right: 10px;
+  color: #ababab;
+}
+.fBox:nth-child(3) {
+  width: 230px;
+}
+.fBox:nth-child(2) {
+  margin-right: 50px;
+}
+.fBox:nth-child(3) {
+  margin-right: 30px;
+}
+.fBox:nth-child(1) {
+  margin-right: 30px;
+}
+.fBoxP24 {
+  width: 40px;
+  float: left;
+  background: #313131;
+  padding: 6px 5px;
+  text-align: center;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+.fBoxP24 span {
+  font-size: 25px;
+  font-weight: 900;
+}
+.april {
+  font-size: 11px;
+  font-weight: 800;
+}
+.fBoxPtext {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: Oswald;
+  color: #ababab;
+  transition: .3s;
+}
+.fBoxPtext:hover{
+    color: #ff5200;
+    cursor: pointer;
+}
+.fBoxAdmin1 {
+  width: 90px;
+  float: left;
+  font-size: 13px;
+  color: #ababab;
+  padding-top: 5px;
+}
+.fBoxAdmin2 {
+  color: #ababab;
+  font-size: 13px;
+  padding-top: 5px;
+}
+.fBoxAdmin3 {
+  color: #ababab;
+  font-size: 13px;
+  padding-top: 5px;
+  margin-bottom: 25px;
+}
+.fBoxAdmin1 i {
+  margin-right: 8px;
+}
+.fBoxAdmin3 i {
+  margin-right: 8px;
+}
+.fBoxAdmin2 i {
+  margin-right: 8px;
+}
+.footerBar {
+  overflow: hidden;
+  padding: 35px 0px;
+  border-top: 0.1px solid #ababab36;
+}
+.fBarText {
+  width: 460px;
+  float: left;
+  color: #ababab;
+}
+.fBarMenu {
+  width: 265px;
+  float: right;
+}
+.fBarMenu ul {
+  list-style-type: none;
+}
+.fBarMenu ul a {
+  text-decoration: none;
+  color: #ababab;
+  transition: .5s;
+}
+.fBarMenu ul li {
+  float: left;
+  margin-right: 15px;
+}
+.fBarMenu ul li a:hover{
+    color: #ff5200;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
